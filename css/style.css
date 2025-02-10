@@ -1,0 +1,183 @@
+/********** Template CSS **********/
+html {
+    scroll-behavior: smooth;
+}
+
+.btn-primary {
+    color: black !important;
+}
+
+
+input[type="text"],
+input[type="tel"] {
+    border: 2px solid #9c9a9a; /* Black border */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px;
+    width: 100%;
+}
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+    background-color: rgba(112, 187, 82, 0.603);
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+img.animated.pulse {
+    animation-duration: 3s;
+}
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn.btn-primary {
+    color: var(--bs-white);
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+}
+
+
+/*** Navbar ***/
+.sticky-top {
+    top: -150px;
+    transition: .5s;
+}
+
+.navbar {
+    padding: 11px 0 !important;
+    height: 85px;
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav {
+        padding: 0 15px;
+        background: var(--bs-primary);
+    }
+
+}
+
+
+/*** Hero Header ***/
+.hero-header {
+    position: relative;
+    margin-top: -190px;
+    padding-top: 8rem; /* Réduction de la hauteur */
+    padding-bottom: 4rem; /* Réduction de la hauteur */
+    background: url(../img/bg.png) center center no-repeat;
+    background-size: cover;
+}
+
+/********** Hero Header Layout Adjustment for Mobile **********/
+@media (max-width: 768px) {
+    .hero-header {
+        margin-top: -85px; /* Adjust the height */
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .hero-header .container {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    /* Set order for each element */
+    .hero-header .col-lg-6 {
+        text-align: center;
+        order: 2; /* Set order for text to come after the image */
+    }
+
+    /* Move image to the top */
+    .hero-header img {
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+        order: 1; /* Set order for image to come first */
+    }
+
+    /* Adjust the title (h1) size */
+    .hero-header h1 {
+        font-size: 1.8rem;
+        text-align: justify;
+    }
+
+    .hero-header h3 {
+        font-size: 1.2rem;
+        text-align: justify;
+        color: rgba(189, 109, 220, 0.788);
+    }
+
+    /* Buttons: stack vertically */
+    .hero-header .btn {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+        order: 3; /* Set order for buttons to come after title */
+    }
+}
+
+
+
+.hero-header::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .1);
+    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
+}
+
+.hero-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-header .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--bs-light);
+}
+
