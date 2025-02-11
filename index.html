@@ -202,60 +202,48 @@
         </div>
     </div>
     <!-- Feature End -->
-
-
 <!-- Contact Form Start -->
 <div class="container-fluid py-5 bg-light" id="contact">
     <div class="container">
         <h2 class="text-center mb-4">Achetez Maintenant</h2>
         <form id="orderForm">
-            <div class="row g-4">
+            <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
                 <!-- Nom & Prénom -->
-                <div class="col-lg-6 col-md-6">
-                    <input type="text" id="nom_prenom" name="nom_prenom" class="form-control" placeholder="Entrez votre nom et prénom" required>
-                </div>
+                <input type="text" id="nom_prenom" name="nom_prenom" class="form-control flex-grow-1 me-3" placeholder="Nom et prénom" required>
         
                 <!-- Ville -->
-                <div class="col-lg-3 col-md-6">
-                    <input type="text" id="ville" name="ville" class="form-control" placeholder="Entrez votre ville" required>
-                </div>
+                <input type="text" id="ville" name="ville" class="form-control flex-grow-1 me-3" placeholder="Ville" required>
         
                 <!-- Téléphone -->
-                <div class="col-lg-3 col-md-6">
-                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Entrez votre numéro" required>
-                </div>
+                <input type="tel" id="phone" name="phone" class="form-control flex-grow-1 me-3" placeholder="Numéro de téléphone" required>
         
                 <!-- Submit Button -->
-                <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary py-2 px-4">Acheter</button>
-                </div>
+                <button type="submit" class="btn btn-primary py-2 px-4">Acheter</button>
             </div>
-            <h2 class="fw-bold text-success animated slideInRight">🚚 Livraison 100% Gratuite !</h2>
-
         </form>
-         <!-- Success Message -->
-       <!-- Order Confirmation Modal -->
-<div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="orderSuccessModalLabel">Commande Réussie</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center">
-                <h3>Merci pour votre commande !</h3>
-                <p>Nous vous contacterons bientôt pour la livraison.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+
+        <h2 class="fw-bold text-success text-center mt-3">🚚 Livraison 100% Gratuite !</h2>
+
+        <!-- Order Confirmation Modal -->
+        <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="orderSuccessModalLabel">Commande Réussie</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h3>Merci pour votre commande !</h3>
+                        <p>Nous vous contacterons bientôt pour la livraison.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-    </div>
-</div>
-
 <!-- Contact Form End -->
 
 
