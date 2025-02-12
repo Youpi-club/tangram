@@ -77,7 +77,6 @@
             <div class="col-lg-6 text-center text-lg-start">
                 <h3 class="fw-light text-black animated slideInRight">logique & créativité</h3>  
                 <h1 class="display-4 text-black animated slideInRight">L'univers ludique de <span class="fw-light text-white">Manchot</span> pour grandir en s'amusant</h1>
-                <h2 class="fw-bold text-success animated slideInRight">🚚 Livraison 100% Gratuite !</h2>
                 <a href="#contact" class="btn btn-dark py-2 px-4 me-3 animated slideInRight">Achetez Maintenant</a>
             </div>
            
@@ -202,46 +201,99 @@
         </div>
     </div>
     <!-- Feature End -->
+
+    <!-- Videos Section Start -->
+<div class="container-fluid py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-4">
+        </div>
+        <div class="row g-4">
+            <!-- GIF 1 -->
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="ratio ratio-16x9">
+                    <img src="gifs/video1.gif" alt="GIF 1" class="img-fluid">
+                </div>
+            </div>
+            <!-- GIF 2 -->
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="ratio ratio-16x9">
+                    <img src="gifs/video2.gif" alt="GIF 2" class="img-fluid">
+                </div>
+            </div>
+            <!-- GIF 3 -->
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="ratio ratio-16x9">
+                    <img src="gifs/video3.gif" alt="GIF 3" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- Videos Section End -->
+
+
 <!-- Contact Form Start -->
 <div class="container-fluid py-5 bg-light" id="contact">
-    <div class="container">
-        <h2 class="text-center mb-4">Achetez Maintenant</h2>
-        <form id="orderForm">
-            <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
-                <!-- Nom & Prénom -->
-                <input type="text" id="nom_prenom" name="nom_prenom" class="form-control flex-grow-1 me-3" placeholder="Nom et prénom" required>
-        
-                <!-- Ville -->
-                <input type="text" id="ville" name="ville" class="form-control flex-grow-1 me-3" placeholder="Ville" required>
-        
-                <!-- Téléphone -->
-                <input type="tel" id="phone" name="phone" class="form-control flex-grow-1 me-3" placeholder="Numéro de téléphone" required>
-        
-                <!-- Submit Button -->
+    <div class="container text-center">
+        <h2 class="mb-4">Achetez Maintenant</h2>
+        <form id="orderForm" class="d-flex flex-column align-items-center">
+            <!-- Form Fields -->
+            <div class="d-flex flex-wrap align-items-center gap-3">
+                <input type="text" id="nom_prenom" name="nom_prenom" class="form-control me-2" placeholder="Nom et prénom" required>
+                <input type="text" id="ville" name="ville" class="form-control me-2" placeholder="Ville" required>
+                <input type="tel" id="phone" name="phone" class="form-control me-2" placeholder="Numéro de téléphone" required>
+            </div>
+
+            <!-- Centered Submit Button -->
+            <div class="mt-3 text-center">
                 <button type="submit" class="btn btn-primary py-2 px-4">Acheter</button>
             </div>
         </form>
 
-        <h2 class="fw-bold text-success text-center mt-3">🚚 Livraison 100% Gratuite !</h2>
+        <h2 class="fw-bold text-success mt-3">🚚 Livraison 100% Gratuite !</h2>
 
         <!-- Order Confirmation Modal -->
-        <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="orderSuccessModalLabel">Commande Réussie</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <h3>Merci pour votre commande !</h3>
-                        <p>Nous vous contacterons bientôt pour la livraison.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
-                    </div>
+<div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderSuccessModalLabel">Commande Réussie</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <h3>Merci pour votre commande !</h3>
+                <p>Nous vous contacterons bientôt pour la livraison.</p>
+
+                <!-- Suggested Items Section -->
+                <h5 class="mt-3">Vous pouvez aussi aimer :</h5>
+                <div class="d-flex justify-content-center gap-2 mt-2">
+                    <a href="page_produit_1.html">
+                        <img src="img/toy1.jpg" alt="Jouet 1" class="img-fluid rounded" width="80">
+                    </a>
+                    <a href="page_produit_2.html">
+                        <img src="img/toy2.jpg" alt="Jouet 2" class="img-fluid rounded" width="80">
+                    </a>
+                    <a href="page_produit_3.html">
+                        <img src="img/toy3.jpg" alt="Jouet 3" class="img-fluid rounded" width="80">
+                    </a>
+                    <a href="page_produit_4.html">
+                        <img src="img/toy4.jpg" alt="Jouet 4" class="img-fluid rounded" width="80">
+                    </a>
+                </div>
+
+                <!-- Link to view more -->
+                <div class="mt-3">
+                    <a href="https://www.youpi.co.ma/marques-jouets/manchot">Voir plus de jouets →</a>
                 </div>
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+            </div>
         </div>
+    </div>
+</div>
+
     </div>
 </div>
 <!-- Contact Form End -->
