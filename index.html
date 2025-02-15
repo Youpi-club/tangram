@@ -351,11 +351,11 @@
             var phone = document.getElementById('phone').value;
 
             // Format the WhatsApp message with encoding
-            var message = `Bonjour, je souhaite commander un Tangram !,\n\n Nom et Prénom: ${nomPrenom}\n ,Ville: ${ville}\n Téléphone: ${phone}`;
+            var message = `Bonjour, je souhaite commander un Tangram !\n\n Nom et Prénom: ${nomPrenom}\n Ville: ${ville}\n Téléphone: ${phone}`;
             var encodedMessage = encodeURIComponent(message); // Proper encoding
 
             // WhatsApp number (Moroccan format: +212762743670)
-            var whatsappNumber = "212762743670";
+            var whatsappNumber = "212661397614";
 
             // WhatsApp API URL
             var whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
