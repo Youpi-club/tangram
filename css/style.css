@@ -7,6 +7,9 @@ html {
     color: black !important;
 }
 
+.navbar-toggler {
+    display: none;
+}
 
 input[type="text"],
 input[type="tel"] {
