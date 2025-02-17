@@ -11,6 +11,7 @@ html {
     display: none;
 }
 
+
 input[type="text"],
 input[type="tel"] {
     border: 2px solid #9c9a9a; /* Black border */
