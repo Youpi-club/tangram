@@ -1,4 +1,18 @@
 /********** Template CSS **********/
+body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%; /* Ensure full width */
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0; /* Ensure no extra space on sides */
+}
+
+img {
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto; /* Keep images proportionate */
+}
 html {
     scroll-behavior: smooth;
 }
