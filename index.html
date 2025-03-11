@@ -8,6 +8,9 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
+    <script defer src="js/scripts.js"></script>
+
+    
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -316,58 +319,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-         document.getElementById('nextBtn').addEventListener('click', function() {
-        document.getElementById('choiceButtons').style.display = 'block';
-        this.style.display = 'none'; // Hide the "Suivante" button
-    });
-          emailjs.init('dgpLcgRA1GgXDG0-f'); // Use your EmailJS Public Key
-       document.getElementById('emailBtn').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default behavior
-
-    // Get form values
-    var nomPrenom = document.getElementById('nom_prenom').value;
-    var ville = document.getElementById('ville').value;
-    var phone = document.getElementById('phone').value;
-
-    // Send via email using EmailJS
-    emailjs.sendForm('service_eq2jipa', 'template_n9qkhod', document.getElementById('orderForm'))
-        .then(function(response) {
-            // Hide the form
-            document.getElementById('orderForm').reset(); // Reset the form
-
-            // Show Bootstrap modal
-            var myModal = new bootstrap.Modal(document.getElementById('orderSuccessModal'));
-            myModal.show();
-        }, function(error) {
-            alert('Échec de l’envoi: ' + error.text);
-        });
-});
-
-document.getElementById('whatsappBtn').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default behavior
-
-    // Get form values
-    var nomPrenom = document.getElementById('nom_prenom').value;
-    var ville = document.getElementById('ville').value;
-    var phone = document.getElementById('phone').value;
-
-    // Format the WhatsApp message with encoding
-    var message = `Bonjour, je souhaite commander un Tangram.\n\n Nom: ${nomPrenom}\n Ville: ${ville}\n Téléphone: ${phone}`;
-    var encodedMessage = encodeURIComponent(message); // Proper encoding
-
-    // WhatsApp number
-    var whatsappNumber = "212661397614"; // Change to your WhatsApp number
-
-    // WhatsApp API URL
-    var whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-
-    // Redirect user to WhatsApp
-    window.location.href = whatsappURL;
-});
-
-
-    </script>
+    
 </body>
 
 </html>
